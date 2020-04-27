@@ -18,7 +18,7 @@ namespace Solucion_Lab_21_abril
 
         // Paso 3: Publicamos el evento. 
 
-        protected virtual void OnEmailSent(object source, EventArgs args)
+        protected virtual void OnEmailSent()
         {
             if (EmailSent != null)
             {

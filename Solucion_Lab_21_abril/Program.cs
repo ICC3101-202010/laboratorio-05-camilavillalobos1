@@ -26,6 +26,7 @@ namespace Solucion_Lab_21_abril
             //3- Suscribir OnCambiadaContrasena de smsSender para que escuche el evento CambiadaContrasena enviado por servidor
             server.PasswordChanged += smsSender.OnPasswordChanged;
 
+          
             mailSender.EmailSent += user.OnEmailSent;
 
             user.EmailVerified += server.OnEmailVerified;
