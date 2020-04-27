@@ -30,7 +30,6 @@ namespace Solucion_Lab_21_abril
 
             user.EmailVerified += server.OnEmailVerified;
 
-
             // Controla la ejecucion mientras el usuario no quiera salir
             bool exec = true;
             while (exec)
@@ -54,6 +53,7 @@ namespace Solucion_Lab_21_abril
                 Thread.Sleep(2000);
                 Console.Clear();
             }
+
         }
 
         // Metodo para mostrar las opciones posibles

@@ -125,7 +125,9 @@ namespace Solucion_Lab_21_abril
 
         public void OnEmailVerified(object source, EventArgs e)
         {
+            Thread.Sleep(2000);
             Console.WriteLine("Te notificamos que el mail de tu cuenta PlusCorp ha sido verificado correctamente. \n");
+            Thread.Sleep(2000);
         }
     }
 }

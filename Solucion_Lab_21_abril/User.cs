@@ -19,10 +19,7 @@ namespace Solucion_Lab_21_abril
 
         protected virtual void OnEmailVerified()
         {
-            if (EmailVerified != null)
-            {
-                EmailVerified(this, EventArgs.Empty);
-            }
+            EmailVerified?.Invoke(this, EventArgs.Empty);
         }
 
         public void OnEmailSent(object source, EventArgs e)
